@@ -1,0 +1,2 @@
+# PC testing
+kivy>=2.2.0
