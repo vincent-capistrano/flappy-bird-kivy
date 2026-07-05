@@ -34,8 +34,13 @@ pip install buildozer cython==0.29.37
 echo ""
 echo "=== Step 4: Copy source to no-spaces build directory ==="
 mkdir -p "$BUILD_DIR"
-cp "$PROJECT_WIN/main.py"       "$BUILD_DIR/"
+cp "$PROJECT_WIN/main.py"        "$BUILD_DIR/"
 cp "$PROJECT_WIN/buildozer.spec" "$BUILD_DIR/"
+cp "$PROJECT_WIN/icon.png"       "$BUILD_DIR/"
+# Copy sound effects
+for sfx in "$PROJECT_WIN"/sfx_*.wav; do
+    [ -f "$sfx" ] && cp "$sfx" "$BUILD_DIR/"
+done
 
 echo ""
 echo "=== Step 5: Build debug APK ==="
