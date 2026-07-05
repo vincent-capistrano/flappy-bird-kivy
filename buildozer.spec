@@ -12,6 +12,10 @@ source.include_exts = py,png,jpg,kv,atlas
 # ── Version ────────────────────────────────────────────────────
 version = 1.4
 
+# ── Icon & presplash ───────────────────────────────────────────
+icon.filename     = %(source.dir)s/icon.png
+presplash.filename = %(source.dir)s/icon.png
+
 # ── Requirements ───────────────────────────────────────────────
 requirements = python3,kivy
 
