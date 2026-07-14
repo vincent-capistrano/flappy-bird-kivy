@@ -121,3 +121,30 @@ The APK is output to the `bin/` directory. Build config is in `buildozer.spec` (
 |--------|-------|
 | Flap | Left-click / tap / Space bar |
 | Navigate menus | Mouse / touch |
+
+---
+
+## Features
+
+- Flappy Bird gameplay with physics-based bird movement
+- Persistent high score saved locally
+- Coin bank earned by playing
+- Bird and pipe skin shop (unlock with coins)
+- Runs cross-platform: Windows, macOS, Linux, and Android
+
+---
+
+## Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| Python 3.8+ | Core language |
+| [Kivy](https://kivy.org/) | Cross-platform UI / game framework |
+| Buildozer | Android APK packaging |
+
+---
+
+## Author
+
+[@vincent-capistrano](https://github.com/vincent-capistrano)
+
